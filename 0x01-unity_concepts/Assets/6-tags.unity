@@ -351,6 +351,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Obstacles
       objectReference: {fileID: 0}
+    - target: {fileID: 3923204495906380911, guid: c2d086537c4cbc943a3bf21af2ce544e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2e586762ca6f2d2469819ebb8356709d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2d086537c4cbc943a3bf21af2ce544e, type: 3}
 --- !u!1 &853284734
