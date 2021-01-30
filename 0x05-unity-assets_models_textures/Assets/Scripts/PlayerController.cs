@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     
     private Rigidbody body;
     private Vector3 movement;
+    private bool groundCheck = true;
 
     // Start is called before the first frame update
     void Start()
@@ -29,10 +30,19 @@ public class PlayerController : MonoBehaviour
 
         Vector3 move = transform.right * Horizontal + transform.forward * Vertical;
 
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && groundCheck)
         {
             body.AddForce(Vector3.up * Mathf.Sqrt(jumpForce * -2 * Physics.gravity.y), ForceMode.VelocityChange);
         }
         body.MovePosition(body.position + move * Speed * Time.deltaTime);
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        groundCheck = true;
+    }
+    private void OnCollisionExit(Collision other)
+    {
+        groundCheck = false;
     }
 }
