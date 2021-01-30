@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public GameObject Camera;
     public float Speed = 5f;
     public float jumpForce = 2f;
     
@@ -27,6 +28,12 @@ public class PlayerController : MonoBehaviour
     {
         float Horizontal = Input.GetAxis("Horizontal");
         float Vertical = Input.GetAxis("Vertical");
+
+        Quaternion rotate = Camera.transform.rotation;
+        rotate.z = 0;
+        rotate.x = 0;
+
+        transform.rotation = rotate;
 
         Vector3 move = transform.right * Horizontal + transform.forward * Vertical;
 
