@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     public GameObject Camera;
     public float Speed = 5f;
-    public float jumpForce = 3.5f;
+    public float jumpForce = 4f;
     public float fallMultiplier = 1.8f;
     
     private Rigidbody body;

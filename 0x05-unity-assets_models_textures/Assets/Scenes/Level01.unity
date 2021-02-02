@@ -1719,6 +1719,7 @@ GameObject:
   - component: {fileID: 922076064}
   - component: {fileID: 922076063}
   - component: {fileID: 922076062}
+  - component: {fileID: 922076066}
   m_Layer: 0
   m_Name: WinFlag
   m_TagString: Untagged
@@ -1795,12 +1796,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 922076061}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 78.52, y: 1.54, z: 77.76}
+  m_LocalPosition: {x: 0, y: 1.4, z: 155.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &922076066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922076061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 084e5285b69038349b35e2921ea00ff4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextObj: {fileID: 24924959}
+  PlayerObj: {fileID: 1526410287}
 --- !u!1 &928029042
 GameObject:
   m_ObjectHideFlags: 0
@@ -2868,7 +2883,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Camera: {fileID: 963194225}
   Speed: 5
-  jumpForce: 3.5
+  jumpForce: 4
   fallMultiplier: 1.8
 --- !u!54 &1526410293
 Rigidbody:
