@@ -2754,8 +2754,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Camera: {fileID: 963194225}
-  Speed: 8
-  jumpForce: 5
+  Speed: 5
+  jumpForce: 3.1
+  fallMultiplier: 1.8
 --- !u!54 &1526410293
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3380,7 +3381,7 @@ PrefabInstance:
     - target: {fileID: 520197811536011931, guid: 2bb26ac94a59e2f45b0a10addd3042cb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -77.44567
+      value: -78
       objectReference: {fileID: 0}
     - target: {fileID: 520197811536011931, guid: 2bb26ac94a59e2f45b0a10addd3042cb,
         type: 3}
@@ -3390,7 +3391,7 @@ PrefabInstance:
     - target: {fileID: 520197811536011931, guid: 2bb26ac94a59e2f45b0a10addd3042cb,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 77.89959
+      value: 78
       objectReference: {fileID: 0}
     - target: {fileID: 520197811536011931, guid: 2bb26ac94a59e2f45b0a10addd3042cb,
         type: 3}

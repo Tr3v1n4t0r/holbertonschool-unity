@@ -6,7 +6,8 @@ public class PlayerController : MonoBehaviour
 {
     public GameObject Camera;
     public float Speed = 5f;
-    public float jumpForce = 2f;
+    public float jumpForce = 3.1f;
+    public float fallMultiplier = 1.8f;
     
     private Rigidbody body;
     private Vector3 movement;
@@ -22,6 +23,11 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         Movement();
+        FallCheck();
+        if (body.velocity.y < 0)
+        {
+            body.velocity += Vector3.up * Physics.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+        }
     }
 
     private void Movement()
@@ -51,5 +57,13 @@ public class PlayerController : MonoBehaviour
     private void OnCollisionExit(Collision other)
     {
         groundCheck = false;
+    }
+
+    private void FallCheck()
+    {
+        if (transform.position.y < -40)
+        {
+            transform.position = new Vector3(-78, 50, 78);
+        }
     }
 }
