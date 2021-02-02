@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     public GameObject Camera;
     public float Speed = 5f;
-    public float jumpForce = 3.1f;
+    public float jumpForce = 3.5f;
     public float fallMultiplier = 1.8f;
     
     private Rigidbody body;
@@ -63,7 +63,7 @@ public class PlayerController : MonoBehaviour
     {
         if (transform.position.y < -40)
         {
-            transform.position = new Vector3(-78, 50, 78);
+            transform.position = new Vector3(0, 50, 0);
         }
     }
 }
