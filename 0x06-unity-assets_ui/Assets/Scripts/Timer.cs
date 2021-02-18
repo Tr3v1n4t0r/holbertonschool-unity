@@ -12,6 +12,7 @@ public class Timer : MonoBehaviour
 
     private Stopwatch sw;
     private Text text;
+    private bool GameIsPaused = false;
 
     // Start is called before the first frame update
     void Start()
@@ -26,5 +27,24 @@ public class Timer : MonoBehaviour
     {
         TimeSpan ts = sw.Elapsed;
         text.text = string.Format("{0:00}:{1:00}.{2:00}", ts.Minutes, ts.Seconds, ts.Milliseconds / 10);
+    }
+
+    public void ToggleState()
+    {
+        if (sw == null)
+        {
+            return;
+        }
+
+        if (GameIsPaused)
+        {
+            GameIsPaused = false;
+            sw.Start();
+        }
+        else
+        {
+            GameIsPaused = true;
+            sw.Stop();
+        }
     }
 }

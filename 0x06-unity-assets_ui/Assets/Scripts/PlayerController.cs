@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -12,21 +13,26 @@ public class PlayerController : MonoBehaviour
     private Rigidbody body;
     private Vector3 movement;
     private bool groundCheck = true;
+    private bool GameIsPaused = false;
 
     // Start is called before the first frame update
     void Start()
     {
         body = GetComponent<Rigidbody>();
+        PlayerPrefs.SetInt("lastLevel", SceneManager.GetActiveScene().buildIndex);
     }
 
     // Update is called once per frame
     void Update()
     {
-        Movement();
-        FallCheck();
-        if (body.velocity.y < 0)
+        if (!GameIsPaused)
         {
-            body.velocity += Vector3.up * Physics.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+            Movement();
+            FallCheck();
+            if (body.velocity.y < 0)
+            {
+                body.velocity += Vector3.up * Physics.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+            }
         }
     }
 
@@ -65,5 +71,10 @@ public class PlayerController : MonoBehaviour
         {
             transform.position = new Vector3(0, 50, 0);
         }
+    }
+
+    public void TogglePause()
+    {
+        GameIsPaused = !GameIsPaused;
     }
 }

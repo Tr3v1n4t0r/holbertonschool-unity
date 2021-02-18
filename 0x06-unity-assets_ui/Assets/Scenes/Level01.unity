@@ -385,6 +385,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1604477497}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &44767626 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1316021257693262491, guid: 53b0e75e921f40a49a007e79897fa84a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1316021257715608337}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &48136331 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 20ff0419abe74e24aa4e9f73642ded87,
@@ -3264,6 +3270,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99ca2d26ac2774a40aded1236216c13a, type: 3}
+--- !u!1 &778354823
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 778354825}
+  - component: {fileID: 778354824}
+  m_Layer: 0
+  m_Name: Pause
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &778354824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778354823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbf1d8646dbe44f43a065ab05a66ef35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenuUI: {fileID: 44767626}
+  pc: {fileID: 1526410290}
+--- !u!4 &778354825
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778354823}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.75, y: 3.62, z: -3.98}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &798536985
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6005,6 +6056,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 3469206836602561928}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1526410290 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3469206837322467772, guid: 2fb5529f83616de40a7bbccb0fccb287,
+    type: 3}
+  m_PrefabInstance: {fileID: 3469206836602561928}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526410287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ff0ea852a7946941bdcff6b87253a6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1544661289
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8605,6 +8668,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1316021257057996748, guid: 53b0e75e921f40a49a007e79897fa84a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 778354824}
+    - target: {fileID: 1316021257248961511, guid: 53b0e75e921f40a49a007e79897fa84a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 778354824}
+    - target: {fileID: 1316021257630489094, guid: 53b0e75e921f40a49a007e79897fa84a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 778354824}
     - target: {fileID: 1316021257693262491, guid: 53b0e75e921f40a49a007e79897fa84a,
         type: 3}
       propertyPath: m_Name
@@ -8715,6 +8793,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7709495354704531245, guid: 53b0e75e921f40a49a007e79897fa84a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 778354824}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53b0e75e921f40a49a007e79897fa84a, type: 3}
 --- !u!1001 &3469206836602561928
