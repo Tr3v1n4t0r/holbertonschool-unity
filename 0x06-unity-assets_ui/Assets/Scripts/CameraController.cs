@@ -6,7 +6,7 @@ public class CameraController : MonoBehaviour
 {
     public GameObject player;
     public float sensitivity = 2.0f;
-    public bool inverted = false;
+    public bool isInverted = false;
 
     private Vector3 offset;
     private float distance;
@@ -26,7 +26,7 @@ public class CameraController : MonoBehaviour
     void LateUpdate()
     {
         rotateX += Input.GetAxis("Mouse X") * sensitivity;
-        if (inverted)
+        if (isInverted)
         {
             rotateY += Input.GetAxis("Mouse Y") * -sensitivity;
         }
@@ -43,4 +43,5 @@ public class CameraController : MonoBehaviour
 
         transform.LookAt(player.transform.position);
     }
+
 }
