@@ -42,6 +42,7 @@ public class CameraController : MonoBehaviour
         transform.position = player.transform.position + rotation * direction;
 
         transform.LookAt(player.transform.position);
+        playerDirection = transform.rotation * new Vector3(rotateX, 0.0f, rotateY);
     }
 
 }

@@ -1094,7 +1094,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 67f70cd40b23f6243ae05997089c7a9d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.07
+      value: -1.06
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 67f70cd40b23f6243ae05997089c7a9d,
         type: 3}
@@ -1140,6 +1140,32 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ty
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 67f70cd40b23f6243ae05997089c7a9d,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 889c9f7c5dd7d1a4e8970ff660539012, type: 2}
+    - target: {fileID: 5866666021909216657, guid: 67f70cd40b23f6243ae05997089c7a9d,
+        type: 3}
+      propertyPath: m_CullingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 67f70cd40b23f6243ae05997089c7a9d,
+        type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'Boy:Hips'\n\tTransform 'Boy:LeftArm'\n\tTransform
+        'Boy:RightHandRing1'\n\tTransform 'Boy:RightHandThumb1'\n\tTransform 'Boy:LeftHandRing2'\n\tTransform
+        'Boy:Head'\n\tTransform 'Boy:LeftHandPinky2'\n\tTransform 'Boy:RightHandIndex2'\n\tTransform
+        'Boy:RightArm'\n\tTransform 'Boy:LeftHandIndex3'\n\tand more ...\n\tFrom
+        animation clip 'Happy Idle'"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 67f70cd40b23f6243ae05997089c7a9d,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67f70cd40b23f6243ae05997089c7a9d, type: 3}
