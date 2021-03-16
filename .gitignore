@@ -58,3 +58,14 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+0x06-unity-assets_ui/Assets/Prefabs/Player.prefab
+0x06-unity-assets_ui/Assets/Prefabs/WinCanvas.prefab
+0x06-unity-assets_ui/Assets/Prefabs/WinCanvas.prefab.meta
+0x06-unity-assets_ui/Assets/Scenes/Level01.unity
+0x06-unity-assets_ui/Assets/Scenes/Level02.unity
+0x06-unity-assets_ui/Assets/Scenes/Level03.unity
+0x06-unity-assets_ui/Assets/Scenes/Options.unity
+0x06-unity-assets_ui/Assets/Scripts/PauseMenu.cs
+0x06-unity-assets_ui/Assets/Scripts/Timer.cs
+0x06-unity-assets_ui/Assets/Scripts/WinTrigger.cs
+.gitignore

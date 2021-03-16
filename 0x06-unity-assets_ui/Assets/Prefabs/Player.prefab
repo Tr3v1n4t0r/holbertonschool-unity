@@ -98,7 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 3469206837322467751}
   sensitivity: 2
-  inverted: 1
+  isInverted: 0
 --- !u!1 &3469206837042206408
 GameObject:
   m_ObjectHideFlags: 0
@@ -145,7 +145,7 @@ GameObject:
   - component: {fileID: 3469206837322467772}
   - component: {fileID: 3469206837322467774}
   m_Layer: 0
-  m_Name: Player 1
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -395,7 +395,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_Font
       value: 
-      objectReference: {fileID: 12800000, guid: 1b17296d2796b8240b361faee85f6862,
+      objectReference: {fileID: 12800000, guid: cd5428b8256897b4fa520e6b9b803790,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f861892a3a56f1948a40c85ba8990b45, type: 3}

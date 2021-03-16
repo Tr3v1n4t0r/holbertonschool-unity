@@ -8,17 +8,24 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    public GameObject TimerText;
+    public GameObject finalTime;
+    public GameObject timerText;
+    public GameObject winCanvas;
 
     private Stopwatch sw;
     private Text text;
+    private Text finalText;
+
     private bool GameIsPaused = false;
 
     // Start is called before the first frame update
     void Start()
     {
         sw = new Stopwatch();
-        text = TimerText.GetComponent<Text>();
+
+        text = timerText.GetComponent<Text>();
+        finalText = finalTime.GetComponent<Text>();
+
         sw.Start();
     }
 
@@ -46,5 +53,11 @@ public class Timer : MonoBehaviour
             GameIsPaused = true;
             sw.Stop();
         }
+    }
+
+    public void Win()
+    {
+        winCanvas.SetActive(true);
+        finalText.text = text.text;
     }
 }

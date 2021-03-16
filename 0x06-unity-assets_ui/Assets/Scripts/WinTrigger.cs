@@ -23,5 +23,9 @@ public class WinTrigger : MonoBehaviour
         timer.enabled = false;
         text.fontSize = 60;
         text.color = Color.green;
+        Cursor.lockState = CursorLockMode.None;
+        timer.Win();
+        timer.enabled = false;
+        text.text = "";
     }
 }

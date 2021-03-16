@@ -10,14 +10,10 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseMenuUI;  // Public object used to display the wanted pause UI
 
     private int currentLevel;
-    public PlayerController pc;
-    private Timer t;
 
     public void Start()
     {
         currentLevel = SceneManager.GetActiveScene().buildIndex;
-        pc = GetComponent<PlayerController>();
-        t = GetComponent<Timer>();
     }
 
     // Update is called once per frame
@@ -47,8 +43,6 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = false;
         // Locks the cursor
         Cursor.lockState = CursorLockMode.Locked;
-        // Pauses camera controller
-        pc.TogglePause();
     }
     
     void Pause()
@@ -61,8 +55,6 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = true;
         // Unlocks the cursor
         Cursor.lockState = CursorLockMode.None;
-        // Pauses camera controller
-        pc.TogglePause();
     }
 
     public void Restart()
